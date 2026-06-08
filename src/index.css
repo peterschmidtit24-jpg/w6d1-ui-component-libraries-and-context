@@ -12,3 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.add-btn {
+  background-color: purple;
+  border-color: purple;
+}
+
+.add-btn:hover {
+  background-color: rgb(77, 0, 77);
+  border-color: rgb(77, 0, 77);
+}
