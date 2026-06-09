@@ -8,13 +8,17 @@ import About from './pages/About'
 import BookList from './pages/books/BookList'
 import BookDetails from './pages/books/BookDetails'
 import BookAddForm from './pages/books/BookAddForm'
+import { useState, useContext } from 'react'
+import { ThemeContext } from './context/theme.context'
 
 function App() {
 
-  return (
-    <>
+  const { theme } = useContext(ThemeContext)
 
-      <Navbar />
+  return (
+    <div className={theme}>
+
+      <Navbar/>
      
       <Routes>
 
@@ -27,7 +31,7 @@ function App() {
 
       </Routes>
 
-    </>
+    </div>
   )
 }
 
